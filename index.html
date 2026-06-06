@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--========================index favicon ==========================-->
+    <link href="assets/favicon/school logo2.png" rel="icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHBASE</title>
+    <!--========================css vendor ==========================-->
+    <link rel="stylesheet" href="assets/aos/aos.css"/>
+    <link rel="stylesheet" href="assets/animate.css-main/animate.css-main/animate.min.css"/>
+</head>
+<body>  
+
+<!-- ========================logo image ========================== -->
+    <div class="home-navigation">
+        <div class="home-logo">
+            <img  src="assets/favicon/school logo2.png"><br>
+            
+            <strong  >techbase institution abuja</strong>
+            <p>
+        </div>
+        </p>
+        </div>
+ <!--======================== end of logo image ==========================-->
+
+
+
+    <!---------------CSS FILE---------------->
+    <link rel="stylesheet" a href="assets/css/css styling.css">
+        <!---------------JS ANIMATION INSTALLATION FILE---------------->
+        <script src="assets/aos/aos.js"></script>
+        <script src="https://kit.fontawesome.com/73bca793bf.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- ---------------- MAIN HEADER NAVIGATION---------------  -->
+<section class="all-header-content">
+<header class="main-heade"> 
+<nav class=" main-navs">
+    <div>
+
+    </div>
+    <ul class="menuList">
+        <li><a href="index.html" class="active">home</a></li>
+        
+        <div class="academy-dropdown">
+        <li><a href="academy.html" class="line-hover">academy</a></li>
+        <div class="academy-list-dropdown">
+            <a href="early childhood.html">early childhood</a>
+            <a href="elementary school.html">elementary school</a>
+            <a href="middle school.html">middle school</a>
+            <a href="high school.html">high school</a>
+        </div>
+        </div>
+
+        <div class="about-dropdown">
+        <li><a href="about.html">about</a></li>
+        <div class="about-dropdown-list">
+            <a href="principal's office.html">principal office</a>
+            <a href="vice principal's office.html">vice principal office</a>
+            <a href="vice academic principal office.html">academic principal office</a>
+        </div>
+        </div>
+
+        <div class="admission-dropdown">
+        <li><a href="admission.html">admission</a></li>
+        <div class="admission-dropdown-list">
+
+            <a href="application processes.html">Admission processes</a>
+            <a href="application policy.html">Admission policy</a>
+            <a href="faqs.html">Admission Faqs</a>
+
+        </div>
+        </div>
+        <li><a href="gallery.html">gallery</a></li>
+         <li><a href="student life.html">student life</a></li>
+
+         <li><a href="contact.html">contact us</a></li>
+
+<!-- ----------------ENROLLED  MAIN HEADER NAVIGATION--------------- -->
+         <a href="Tech Application Form/form.html"class="apply-online "><span class="animate__animated animate__flash animate__infinite animate__slow	4s">enrolled now</span></a>
+ <!-- ----------------END OF ENROLLED MAIN HEADER NAVIGATION--------------- -->
+
+    </ul>
+</div>
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        menue
+    </div>
+</nav>
+</p>
+</header>   
+</section>
+
+<script>
+   
+    
+const hamburger = document.querySelector('.menu-icon');
+const menuList = document.querySelector('.menuList');
+let menu = false
+
+hamburger.addEventListener('click', (event) => {
+  clickHamburger(event)
+});
+
+document.addEventListener('click',()=>{
+ clickOutsideMenu()
+})
+           
+menuList.addEventListener('click',()=>{
+    clickInsideMenu()    
+})
+
+function clickHamburger(event){
+ if(menu){
+    menu = false
+    menuList.classList.remove('open')
+   }else{
+    menu = true
+    menuList.classList.add('open')
+   }
+   event.stopPropagation()
+}
+function clickOutsideMenu(){
+if(menu){
+    menu = false
+  menuList.classList.remove('open')
+}
+}
+function clickInsideMenu(){
+  if(menu){
+    menu = false
+  menuList.classList.remove('open')
+}  
+}
+
+</script>
+
+<!-- ---------------- END OF MAIN HEADER NAVIGATION--------------- -->
+
+
+<!--======================== mobile screen baground image ==========================-->
+<!-- <div class="header-container">
+    <img class="header-image" src="assets/image/background/comunity.jpg">
+   </div> -->
+<!--========================end of mobile screen baground image ==========================-->
+
+
+<!--========================desktop screen baground slide image ==========================-->
+<header class="sliders"data-aos="zoom-out" data-aos-delay="300" >
+    <figure>
+            <img src="assets/image/background/high.jpg">
+            <img src="assets/image/background/comunity.jpg">
+            <img src="assets/image/background/activ.jpeg">
+            <img src="assets/image/background/aisa5.jpg">
+        <img src="assets/image/background/activites.jpeg">
+
+    </figure>
+</header>
+    </section> 
+    <!--======================== end of desktop screen baground slide image ==========================-->
+
+
+<!--========================school services ==========================-->
+ <section class="all-school-information-content">
+    <div class="container1">
+        <div class="content">
+            <h4> we are </h4>
+            <h1>techbase  <span>institute</span></h1>
+            <h3>school academic program <span class="text"></span></h3>
+        </div>
+    </div> 
+</section>
+<!-- ========================end of my school services ==========================--> 
+
+
+<!--========================hero section of the page ==========================-->
+ <section class="hero" >
+<h3 data-aos="flip-right" >welcome <span >to techbase institution</span></h3>
+<p data-aos="flip-right" >We are pleased to showcase our strong academic curriculum,
+    our world class facilities and the holistic nature of our 
+    educational program that helps each one of our students to 
+    respect and appreciate the world and their growing role within it.
+    We all deeply love techbase institution and I am sure that this will be evident 
+    as you continue your journey through the pages of this website.</p>
+    <div class="hero-container">
+        <div class="hero-content">
+            <img src="assets/image/home/activ.jpeg">
+        </div>
+        <div class="hero-content" >
+            <img src="assets/image/home/ics.jpg">
+        </div>
+    </div>
+ </section>
+ <!--========================end of the hero section ==========================-->
+
+<!--========================school academic curriculum layout  ==========================-->
+ <h1 class="text-heading">discover more about techbase institution abuja</h1>
+     <div class="convert">
+        <div class="box">
+            <div data-aos="slide-up" data-aos-delay="100">
+            <h1><a href="early childhood.html"><img src="assets/image/home/aisa4.jpg" width="300px" height="200px"></a></h1>
+            <h3>early childhood</h3>
+            <p>The International Community School, Abuja was founded in 1998 with a vision to provide a Christian international education. From a humble beginning of just eight students it has grown to 
+                become a full early years, elementary and secondary school.
+                <li><a href="early childhood.html">explore more</a></li>
+               </p>
+            </div>
+        </div>
+        <div class="box1">
+            <div data-aos="flip-up"data-aos-delay="100" >
+            <h1><a href="admission.html"><img src="assets/image/home/aisa3.jpg" width="300px" height="200px"></a></h1> 
+            <h3>elementary SCHOOL</h3>
+            <p>The International Community
+                School, Abuja was founded
+                in 1998 with a vision to 
+                provide a Christian inter
+                national education. From a
+                humble beginning of just eight students it has grown to become a full early years, elementary and secondary school.
+                <li><a href="admission.html">explore more</a></li>
+               </p>
+            </div>
+        </div>
+        <div class="box2">
+            <div data-aos="flip-down"data-aos-delay="200">
+            <h1><a href="about.html"><img src="assets/image/home/ics.jpg" width="300px" height="200px"></a></h1>
+            <h3>middle school</h3>
+            <p>The International Communit School, Abuja was founded in 1998 with a vision to provide a Christian international education. From a humble beginning of just eight students it has grown to become a full early years, elementary and secondary school
+                <li><a href="about.html">explore more</a></li>
+               </p>
+        </div>
+        </div>
+        <div class="box3">
+            <div data-aos="flip-up"data-aos-delay="300">
+                <h1><a href="gallery.html"><img src="assets/image/home/ics2.jpg" width="300px" height="200px"></a></h1> 
+                <h3>HIGH SCHOOL</h3>
+                <p>The International Community School, Abuja was founded in 1998 with a vision to provide a Christian international education. From a humble beginning of just eight students it has grown to become a full early years, elementary and secondary school.
+                    <li><a href="gallery.html">explore more</a></li>
+                   </p>
+            </div>
+        </div>
+    </div>
+<!--========================end of school academic curriculum layout  ==========================-->
+
+    
+
+<!--========================overlay section of about school  ==========================-->
+ <div class="image-container">
+    <a href="about.html">
+        <!-- ========================overlay image  ========================== -->
+         <img src="assets/image/home/overlay.jpg" height="0px">
+    </a>
+    <div class="overlay">
+ <li><a href="about.html"> 
+ <h2 data-aos="flip-left" data-aos="flip-right">about us</h2>
+</a>
+<!-- ========================overlay text  ========================== -->
+ <p class="image-text" data-aos="flip-down">The techbase institution, Abuja was discovered in october<br>
+             1st 1965 with a mission and vision to provide a Christian
+             international education. From a humble beginning of just 
+             eight students it has grown to become a full early years, 
+             elementary and secondary school.</p>
+    </div>
+</div> 
+<!--======================== end of overlay section of about school  ==========================-->
+
+
+<!--========================school activities index layout  ==========================-->
+ <h1 class="text-h1">techbase institution activities</h1>
+<section class="all-image-activities">
+<div class="image-activities"> 
+        <div class="image-activities1"data-aos="zoom-out" data-aos-delay="300" >
+            <!-- ========================image section  ========================== -->
+        <a href="student life.html"><img src="assets/image/home/activites.jpeg"></a>
+        <h2 data-aos="fade-up" data-aos-delay="100" >student councel</h2>
+   </div> 
+    <div class="image-activities1"data-aos="zoom-out" data-aos-delay="300" >
+
+            <!-- ========================image section  ========================== -->
+        <img src="assets/image/home/activ.jpeg" >
+        <h2 data-aos="fade-up" data-aos-delay="200" >Community services</h2>   
+    </div> 
+<div class="image-activities1"data-aos="fade-up" >
+
+            <!-- ========================image section  ========================== -->
+    <a href="faqs.html"><img src="assets/image/home/ics3.jpg"></a>
+<h2 data-aos="zoom-out" data-aos-delay="300" >school event</h2>
+</div>
+
+
+    <div class="image-activitiest"data-aos="zoom-out" data-aos-delay="300" >
+
+                <!-- ========================image section  ========================== -->
+        <a href="faqs.html"><img src="assets/image/home/ics3.jpg"></a>
+<h2 data-aos="flip-down" data-aos-delay="300">exteral curriculum</h2>
+    </div>
+    <div class="image-activitiest" data-aos="zoom-out" data-aos-delay="300" >
+
+             <!-- ========================image section  ========================== -->
+<img src="assets/image/home/ics3.jpg">
+<h2 data-aos="flip-down" >ict tweet</h2>
+    </div>
+    <div class="image-activitiest"data-aos="zoom-out" data-aos-delay="300" >
+
+                 <!-- ========================image section  ========================== -->
+    <a href="student life.html"><img src="assets/image/home/activities.jpeg" ></a>
+        <h2 data-aos="zoom-in" data-aos-delay="300" >monitoring and<br>
+             councelling</h2>
+    </div>
+</div>
+</section>
+<!--======================== end of school activities index layout  ==========================-->
+
+<!--========================marquee text  ==========================-->
+<!-- <div class="marquee" >
+    <h1><marquee direction="up" bgcolor="white" 
+     height="50PX" width="30%" vspace="100px"
+      hspace="30%" scrollamount="4" behavior="alternate"></marquee></h1>
+ </div> 
+ <!-======================== end marquee text  ==========================-->
+
+<!-----------------js file-------------------->
+    <script src="assets/js/INDEX.JS"></script>
+
+<!-----------------FOOTER-------------------->
+ <footer>
+    <section class="all-footer">
+  <div class="footer-home">
+    <div class="footer-logo" >
+       <a href="index.html"> <img src="assets/image/home/logo_render.png"></a><br><br>
+        <strong>techbase institution</strong>
+    </div>
+    <div class="footer-nav">
+
+        <!-- ========================footer navigation  ========================== -->
+        <h2 class="animate__animated animate__flash animate__infinite animate__slow	4s" >navigation</h2>
+        <li><a href="contact.html">contact us</a></li>
+        <p>
+        <li><a href="admission.html">admission</a></li>
+        <p>
+        <li><a href="academy.html">academic program</a></li>
+        <p>
+        <li><a href="about.html">about us</a></li>
+        <p>
+        <li><a href="services.html">services</a></li>
+        <p>
+        <li><a href="faqs.html">privacy policy</a></li><br>
+
+        <li><a href="index.html">home</a></li>
+        </p>
+    </div>
+     <!-- ========================end of footer navigation  ==========================-->
+ 
+
+         <!--========================footer useful links  ========================== -->
+    <div class="footer-links">
+        <h2>useful links</h2>
+        <li><a href="faqs.html">faqs</a></li><br>
+        <li><a href="admission.html">admission</a></li><br>
+        <li><a href="academy.html">academic program</a></li><br>
+        <li><a href="academy.html">registeration form</a></li><br>
+        <li><a href="admission processing.html">admission processing</a></li><br>
+        <li><a href="https://forms.gle/4x35yoaCR9wPNy7S9">apply online</a></li><br>
+        </p>
+    </div>
+    <!-- ========================footer useful links  ========================== -->
+
+
+        <!-- ========================footer social links and contact us  ========================== -->
+    <div class="social-links">
+        <h2>contact us</h2>
+        <p>no. 45 ganna<br>
+            street ademola<br>
+            adetokunbo<br> crescent
+            wuse2 abuja<br>
+        </p>
+        <h2>follow us</h2>
+      <li>
+          <a href="https://facebook.com" target="_blank">
+          <img src="assets/image/home/facebook.jpg" height="50px" width="50px">
+        </a>
+        </li>
+        <li>
+            <a href="https://twitter.com" target="_blank">
+           <img src="assets/image/home/twitter.png" height="50px" width="50px">
+        </li>
+    </a>
+    <li>
+        <a href="https://youtube.com" target="_blank">
+       <img src="assets/image/home/youtube.png" height="50px" width="50px">
+    </li>
+</a>
+</p>
+    </div>
+  </div> 
+    <!--========================footer useful links  ==========================-->
+
+   <div class="footer-copyright">
+    <div>
+        <h1>@copyright 2024 reserved | techbase institution abuja</h1>
+
+    </div>
+    <div>
+       <h1> 07033706470</h1>
+    </div>
+    <div>
+       <h1>07089786205<h1>
+    </div>
+  </div>
+    
+</section> 
+</footer>
+</body>
+</html>
